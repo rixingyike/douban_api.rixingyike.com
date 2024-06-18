@@ -1,0 +1,41 @@
+<style>
+  body{
+    padding: 30px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+</style>
+<h1>《小程序从0到1》豆瓣接口代替小工具</h1>
+<p>尊敬的《小程序从0到1》读者，你好，<br/><br/>由于豆瓣接口不稳定，时常返回服务器错误，给大家的学习造成很大麻烦。当初选择豆瓣接口放在示例中，可能是一个文青对自己钟爱的网站的一个错误决定。</p>
+<p>豆瓣接口在该书二版（2018年5月印刷）修订版中已经拿去了。为方便一版（2017年12月印刷）的老读者学习，作者写了一个这样的接口小工具。</p>
+<p></p>
+<p>如何使用呢？该工具共有三个平台版本：Windows、Linux 和 macOS，选择一个合适的版本启动。例如，你是 Windows 用户，启动 server_win64 或 server_win32；你是 macOS 用户，启动 server_macOS。启动后，在实践时，将一版小程序源码中的 https://api.douban.com 替换为 http://localhost:8080，即可。</p>
+<p></p>
+<p>一版书上的接口列表如下所示，单击链接可以查看本地接口的输出。</p>
+<ol>
+  <li><a target="_blank" href="http://localhost:8080/v2/movie/top250?start=0&count=10">https://api.douban.com/v2/movie/bang/${board.key}?start=0&count=10</a></li>
+  <li><a target="_blank" href="http://localhost:8080/v2/movie/subject/3267549">https://api.douban.com/v2/movie/subject/${options.id}</a></li>
+  <li><a target="_blank" href="http://localhost:8080/v2/movie/in_theaters?start=0&count=10">https://api.douban.com/v2/movie/${this.data.type}?start=${start}&count= ${this.data.size}</a></li>
+  <li><a target="_blank" href="http://localhost:8080/v2/movie/search?q=和平&start=0&count=10">https://api.douban.com/v2/movie/search?q=${this.data.searchWords}&start=${start}&count=${this.data.size}</a></li>
+  <li><a target="_blank" href="http://localhost:8080/v2/movie/coming_soon?start=0&count=3">https://api.douban.com/v2/movie/coming_soon?start=0&count=3</a></li>
+</ol>
+<p>如果本工具后续有更新，会发布到公众号「艺述论」</p>
+<p>&nbsp;</p>
+<p style="text-align:right;">
+2018年03月23日 李艺于北京通州
+</p>
+<p>&nbsp;</p>
+<p>更新：另外，对于二版的读者，本接口工具也是需要的。因为目前该书出版社已经停印，原接口程序 api.rixingyike.com 也不再提供线上服务。但我发现现在仍然有不少读者在我的公众号后台留言下载源码，对这些读者而言，
+  他们可能也是需要本接口工具的。</p>
+  <p>二版书中的接口列表如下所示，单击链接可以查看本地接口的输出。</p>
+  <ol>
+    <li><a target="_blank" href="http://localhost:8080/v2/movie/top250?start=0&count=10">https://api.rixingyike.com/v2/movie/bang/${board.key}?start=0&count=10</a></li>
+    <li><a target="_blank" href="http://localhost:8080/v2/movie/subject/3267549">https://api.rixingyike.com/v2/movie/subject/${options.id}</a></li>
+    <li><a target="_blank" href="http://localhost:8080/v2/movie/in_theaters?start=0&count=10">https://api.rixingyike.com/v2/movie/${this.data.type}?start=${start}&count= ${this.data.size}</a></li>
+    <li><a target="_blank" href="http://localhost:8080/v2/movie/search?q=和平&start=0&count=10">https://api.rixingyike.com/v2/movie/search?q=${this.data.searchWords}&start=${start}&count=${this.data.size}</a></li>
+    <li><a target="_blank" href="http://localhost:8080/v2/movie/coming_soon?start=0&count=3">https://api.rixingyike.com/v2/movie/coming_soon?start=0&count=3</a></li>
+  </ol>  
+<p>按上述方法，将本接口工具启动后，将书上的 api.rixingyike.com 地址替换为本地的 localhost:8080 即可。</p>
+<p style="text-align:right;">
+2024年06月18日 李艺于北京通州</small>
+</p>
